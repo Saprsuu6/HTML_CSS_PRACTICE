@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #e8e8e8;
-    padding: 50px 400px 0 400px;
+    padding: 50px 200px 0 200px;
 }
 
 .background {
@@ -104,8 +104,15 @@ body {
     list-style: url("./Resources/icons/check_icon.png");
 }
 
+/* .content-list ul li p::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: url("./Resources/icons/check_icon_red.png") no-repeat;
+} */
+
 .content-list ul {
-    padding-left: 30px;
     text-align: left;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -138,8 +145,13 @@ body {
     opacity: 0.3;
 }
 
+.content-list ul li:hover {
+    list-style: url("./Resources/icons/check_icon_red.png");
+    color: #ff0000;
+}
+
 .button-link {
-    box-shadow: 5px 5px 5px rgba(128, 183, 179, 0.54);
+    box-shadow: 0 0 20px rgba(128, 183, 179, 0.54);
     padding: 17px 30px 17px 30px;
     background-color: #80b7b3;
     border-radius: 30px;
@@ -151,7 +163,39 @@ body {
     letter-spacing: 2.8px;
 }
 
+.button-link:hover {
+    background-color: #3a5856;
+    box-shadow: 0 0 20px #3a5856;
+}
+
+.button-link:active {
+    background-color: #818181;
+    box-shadow: 0 0 20px #818181;
+}
+
 .button-link span {
     padding: 0 35px 0 0;
     background: url("./Resources/icons/arrow.svg") right no-repeat;
+}
+
+.content-input {
+    margin: 45px 0 45px 0;
+    display: block;
+    border: 1px solid #666;
+    padding: 5px 15px;
+    font-size: medium;
+    width: 30%;
+}
+
+.content-input:focus {
+    box-shadow: 0 0 20px #7fbed5;
+    border: 1px solid #7fbed5;
+}
+
+.foot-text p:first-child::first-line {
+    color: red;
+}
+
+.foot-text p:nth-child(2)::first-letter {
+    color: red;
 }
