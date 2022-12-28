@@ -7,16 +7,30 @@
 
 	/* position: relative; align auxiliarty position */
 
+	/* position: absolute; */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
     width: 200px;
     height: 200px;
 
 	/* line-height: 200px; align auxiliarty line-height */
     
-	text-align: center;
+	/* text-align: center; couse inner is inline-bloc; */
     /* vertical-align: middle; */
 
     background-color: #ffc;
 }
+
+/* .outer::after { align auxiliarty ::after
+    display: inline-block;
+    height: 100%;
+
+    vertical-align: middle;
+    content: "";
+} */
 
 .inner {
 	/* position: absolute; align auxiliarty position
@@ -30,15 +44,28 @@
     top: 50%;
     left: 50%;
     margin-top: -50px;
-    margin-left: -50px;
+    margin-left: -50px; */
 
-    display: inline-block; */
+    /* display: inline-block; */
 
 	/* white-space: nowrap; */
     /* overflow: hidden; */
 
+	/* position: relative; align auxiliarty negative transfor alternative for negative margin
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+	/* display: inline-block; align auxiliarty ::after
+    width: 100px;
+
+    vertical-align: middle;
+    background-color: #fcc; */
+
     width: 100px;
     height: 100px;
+
+	/* margin: auto; align auxiliarty flexmodel */
 
 	/* margin: 50px auto; align auxiliarty magin */
 
