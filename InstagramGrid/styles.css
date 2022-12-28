@@ -1,0 +1,109 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.layout > .header { 
+    width: 100%;  
+    position: fixed;
+
+    background: white;
+
+    text-align: center;
+    box-shadow: 0px 15px 20px -10px #111;     
+}
+
+h1 {
+    margin: 0px;
+}
+
+.line {
+    background: whitesmoke;
+
+    padding: 50px 50px;
+}
+
+.wrapper {
+    margin: 35px 0px;
+}
+
+.post-content > .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.background {
+    width: 30px;
+    height: 30px;
+
+    display: inline-block;
+}
+
+.ava {
+    background: url("./resouces/user.png") no-repeat center;
+    background-size: contain;
+
+    border-radius: 50%;
+}
+
+.settings {
+    background: url("./resouces/dots.png") no-repeat center;
+    background-size: contain;
+}
+
+.media {
+    margin: 10px 0px;
+
+    width: 100%;
+    height: 400px;
+
+    background: url("./resouces/media.jpg") no-repeat center;
+    background-size:cover;
+
+    border-radius: 10px;
+}
+
+.post-content > .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data {
+    display: inline-block;
+
+    line-height: 50px;
+}
+
+.data span {
+    vertical-align:middle;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.like {
+    background: url("./resouces/like.png") no-repeat center;
+    background-size: contain;
+    
+    margin: 0px 3px;
+}
+
+.save {
+    background: url("./resouces/save.png") no-repeat center;
+    background-size: contain;
+
+    margin: 0px 3px;
+}
+
+.layout > .basemant {
+    width: 100%;  
+    position: relative;
+
+    background:  white;
+
+    text-align: center;
+    box-shadow: -0px -20px 20px -13px #111;     
+}
