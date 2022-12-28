@@ -1,0 +1,46 @@
+/* .outer-wrapper {
+	display: table; align auxiliarty tables
+} */
+
+.outer {
+	/* display: table-cell; align auxiliarty tables */
+
+	/* position: relative; align auxiliarty position */
+
+    width: 200px;
+    height: 200px;
+
+	/* line-height: 200px; align auxiliarty line-height */
+    
+	text-align: center;
+    /* vertical-align: middle; */
+
+    background-color: #ffc;
+}
+
+.inner {
+	/* position: absolute; align auxiliarty position
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	margin: auto; */
+
+	/* position: absolute; align auxiliarty negative margin
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+
+    display: inline-block; */
+
+	/* white-space: nowrap; */
+    /* overflow: hidden; */
+
+    width: 100px;
+    height: 100px;
+
+	/* margin: 50px auto; align auxiliarty magin */
+
+    background-color: #fcc;
+}
