@@ -1,0 +1,24 @@
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .main-body {
+        background: url('./resources/backgrounds/Spider-Man-poster2.jpg') no-repeat center;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .main-body {
+        background: url('./resources/backgrounds/Spider-Man-poster3.jpg') no-repeat center 20%;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-body {
+        background: url('./resources/backgrounds/Spider-Man-poster4.jpg') no-repeat center 35%;
+        background-size: cover;
+    }
+
+    .back {
+        display: none;
+    }
+}
