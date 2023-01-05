@@ -1,0 +1,94 @@
+body {
+    position: fixed;
+    top: 0;
+}
+
+.main-body {
+    height: 100%;
+
+    background: url('../backgrounds/Spider-Man-poster1.jpg') no-repeat top;
+    background-size: cover;
+}
+
+.back {
+    width: 5%;
+
+    background: url('../icons/back.png') no-repeat center rgba(150, 150, 150, 0.5);
+    background-size: 50%;
+}
+
+.back:hover {
+    background-color: rgba(150, 150, 150, 0.4);
+}
+
+.back:active {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.senser-info {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 0;
+
+    backdrop-filter: blur(20px);
+    border-radius: 30px 30px 0px 0px;
+
+    /* clear then */
+    animation: slider-info-up 1s;
+    animation-fill-mode: forwards;
+}
+
+/* .content {
+    position: relative;
+    margin: 30px 30px 30px 0px;
+
+    height: 100%;
+    font-size: large;
+
+    overflow: scroll;
+    backdrop-filter: blur(20px);
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+
+    height: 20px;
+    width: 100%;
+
+    background: blue;
+} */
+
+.senser-info .slider {
+    margin: -15px auto 7px auto;
+
+    width: 40%;
+    height: 5px;
+
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+.senser-info-move-up {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: slider-info-up 1s;
+    animation-fill-mode: forwards;
+}
+
+.senser-info-move-down {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: slider-info-down 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slider-info-up {
+    from {height: 0;}
+    to {height: 65%;}
+}
+
+@keyframes slider-info-down {
+    from {height: 65%;}
+    to {height: 0;}
+}
