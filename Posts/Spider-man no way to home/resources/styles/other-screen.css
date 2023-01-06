@@ -3,12 +3,28 @@
         background: url('../backgrounds/Spider-Man-poster2.jpg') no-repeat center;
         background-size: cover;
     }
+
+    .senser-info {
+        background: linear-gradient(#D49B00,#CA7B00);   
+    }
+
+    .senser-info .for-content .bottom {
+        background: linear-gradient(to top, #CA7B00, transparent 50%);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .main-body {
         background: url('../backgrounds/Spider-Man-poster3.jpg') no-repeat center 20%;
         background-size: cover;
+    }
+
+    .senser-info {
+        background: linear-gradient(#EBCAA7,#D1957B);   
+    }
+
+    .senser-info .for-content .bottom {
+        background: linear-gradient(to top, #D1957B, transparent 50%);
     }
 }
 

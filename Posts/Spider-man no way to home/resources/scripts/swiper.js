@@ -9,10 +9,12 @@ export default class Swiper {
     this.y1 = firstTouch.clientY;
   };
 
-  handleTochMove = (firstTouch, htmlElement) => {
+  handleTochMove = (firstTouch, htmlElement, gradient) => {
     if (this.x1 == null || this.y1 == null) {
       return;
     }
+
+    console.log(gradient);
 
     var x2 = firstTouch.clientX;
     var y2 = firstTouch.clientY;
@@ -25,15 +27,17 @@ export default class Swiper {
       else console.log("left");
     } else {
       if (yDiff > 0) {
-        if (htmlElement.classList.contains("senser-info-move-up")) {
-          htmlElement.classList.remove("senser-info-move-up");
-        }
-        htmlElement.classList.add("senser-info-move-down");
+        htmlElement.classList.replace(
+          "senser-info-move-up",
+          "senser-info-move-down"
+        );
       } else {
         if (htmlElement.classList.contains("senser-info-move-down")) {
-          htmlElement.classList.remove("senser-info-move-down");
-        }
-        htmlElement.classList.add("senser-info-move-up");
+          htmlElement.classList.replace(
+            "senser-info-move-down",
+            "senser-info-move-up"
+          );
+        } else htmlElement.classList.add("senser-info-move-up");
       }
     }
   };
