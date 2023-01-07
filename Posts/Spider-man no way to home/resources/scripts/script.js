@@ -10,35 +10,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // screen logic
   var menu_button = document.querySelector(".menu-button");
-  var screen = document.getElementById("screen");
   var content = document.querySelector(".screen-content");
-  var for_button = document.querySelector(".for-button");
 
   menu_button.addEventListener("click", (event) => {
-    if (screen.classList.contains("close-info")) {
-      screen.classList.replace("close-info", "open-info");
-      for_button.style.width = "7%";
-      content.style.display = "block";
-
-      if (screen.classList.contains("screen-menu-move-right")) {
-        screen.classList.replace(
-          "screen-menu-move-right",
-          "screen-menu-move-left"
-        );
-      } else {
-        screen.classList.add("screen-menu-move-left");
-      }
-    } else if (screen.classList.contains("open-info")) {
-      screen.classList.replace("open-info", "close-info");
-      for_button.style.width = "100%";
-      content.style.display = "none";
-
-      if (screen.classList.contains("screen-menu-move-left")) {
-        screen.classList.replace(
-          "screen-menu-move-left",
-          "screen-menu-move-right"
-        );
-      }
+    if (content.classList.contains("screen-menu-move-left")) {
+      content.classList.replace(
+        "screen-menu-move-left",
+        "screen-menu-move-right"
+      );
+    } else if (content.classList.contains("screen-menu-move-right")) {
+      content.classList.replace(
+        "screen-menu-move-right",
+        "screen-menu-move-left"
+      );
+    } else {
+      content.classList.add("screen-menu-move-left");
     }
   });
 });
@@ -49,12 +35,12 @@ function ResizeEvent() {
 
   if (back_div != null) {
     var style = window.getComputedStyle(back_div, null);
-    back_div.style.height = style.width;
+    // back_div.style.height = style.width; in case width in %
   }
 
   if (menu_button_div != null) {
     var style = window.getComputedStyle(menu_button_div, null);
-    menu_button_div.style.height = style.width;
+    // menu_button_div.style.height = style.width; in case width in %
   }
 }
 

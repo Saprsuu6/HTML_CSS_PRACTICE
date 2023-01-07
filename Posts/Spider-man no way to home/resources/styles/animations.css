@@ -31,11 +31,11 @@
 }
 
 @keyframes screen-menu-left {
-    from {width: 4%;}
-    to {width: 60%;}
+    from {width: 0px;}
+    to {width: 700px;}
 }
 
 @keyframes screen-menu-right {
-    from {width: 60%;}
-    to {width: 4%;}
+    from {width: 700px;}
+    to {width: 0px;}
 }
