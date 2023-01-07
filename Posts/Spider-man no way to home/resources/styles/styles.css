@@ -11,10 +11,11 @@ body {
 }
 
 .back {
-    width: 5%;
+    width: 4%;
 
     background: url('../icons/back.png') no-repeat center rgba(150, 150, 150, 0.5);
     background-size: 50%;
+    backdrop-filter: blur(3px);
 }
 
 .back:hover {
@@ -24,6 +25,8 @@ body {
 .back:active {
     background-color: rgba(200, 200, 200, 0.3);
 }
+
+/* For senser screen */
 
 .senser-info {
     position: absolute;

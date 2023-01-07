@@ -37,4 +37,46 @@
     .back, .senser-info {
         display: none;
     }
+
+    .screen {
+        position: absolute;
+        right: 0;
+
+        height: 100%;
+    }
+
+    .open-info {
+        display: flex;
+        width: 60%;
+    }
+
+    .close-info {
+        display: block;
+        width: 4%;
+    }
+
+    .screen .for-button .menu-button {
+        width: 100%;
+
+        background: url('../icons/menu.png') no-repeat center rgba(150, 150, 150, 0.5);
+        background-size: 50%;
+        backdrop-filter: blur(3px);
+    }
+
+    .screen .for-button .menu-button:hover {
+        background-color: rgba(150, 150, 150, 0.4);
+    }
+    
+    .screen .for-button .menu-button:active {
+        background-color: rgba(200, 200, 200, 0.3);
+    }
+
+    .screen-content {
+        display: none;
+
+        width: 93%;
+        height: 100%;
+
+        background: blue;
+    }
 }

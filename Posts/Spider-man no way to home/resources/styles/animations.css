@@ -1,12 +1,22 @@
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
 .senser-info-move-up {
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation: slider-info-up 1s;
     animation-fill-mode: forwards;
 }
 
 .senser-info-move-down {
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation: slider-info-down 1s;
+    animation-fill-mode: forwards;
+}
+
+.screen-menu-move-left {
+    animation: screen-menu-left 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.screen-menu-move-right {
+    animation: screen-menu-right 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -18,4 +28,14 @@
 @keyframes slider-info-down {
     from {height: 65%;}
     to {height: 0;}
+}
+
+@keyframes screen-menu-left {
+    from {width: 4%;}
+    to {width: 60%;}
+}
+
+@keyframes screen-menu-right {
+    from {width: 60%;}
+    to {width: 4%;}
 }
