@@ -68,6 +68,6 @@
         width: 0px;
         height: 100%;
 
-        background: blue;
+        background: linear-gradient(to left, #536A8B, #8496B2);
     }
 }

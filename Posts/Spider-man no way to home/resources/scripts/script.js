@@ -1,4 +1,5 @@
 import Swiper from "./swiper.js";
+import movieInfo from "../movieInfo.json" assert { type: "json" };
 
 document.addEventListener("DOMContentLoaded", (event) => {
   ResizeEvent();
@@ -9,24 +10,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   SensorLogic(swiper);
 
   // screen logic
-  var menu_button = document.querySelector(".menu-button");
-  var content = document.querySelector(".screen-content");
+  ScreenLogic();
 
-  menu_button.addEventListener("click", (event) => {
-    if (content.classList.contains("screen-menu-move-left")) {
-      content.classList.replace(
-        "screen-menu-move-left",
-        "screen-menu-move-right"
-      );
-    } else if (content.classList.contains("screen-menu-move-right")) {
-      content.classList.replace(
-        "screen-menu-move-right",
-        "screen-menu-move-left"
-      );
-    } else {
-      content.classList.add("screen-menu-move-left");
-    }
-  });
+  console.log(movieInfo);
 });
 
 function ResizeEvent() {
@@ -57,4 +43,25 @@ function SensorLogic(swiper) {
       swiper.ResetCoords();
     });
   }
+}
+
+function ScreenLogic() {
+  var menu_button = document.querySelector(".menu-button");
+  var content = document.querySelector(".screen-content");
+
+  menu_button.addEventListener("click", (event) => {
+    if (content.classList.contains("screen-menu-move-left")) {
+      content.classList.replace(
+        "screen-menu-move-left",
+        "screen-menu-move-right"
+      );
+    } else if (content.classList.contains("screen-menu-move-right")) {
+      content.classList.replace(
+        "screen-menu-move-right",
+        "screen-menu-move-left"
+      );
+    } else {
+      content.classList.add("screen-menu-move-left");
+    }
+  });
 }
