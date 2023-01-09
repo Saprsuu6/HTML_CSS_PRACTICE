@@ -8,11 +8,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // sensor logic
   var swiper = new Swiper();
   SensorLogic(swiper);
+  FillInfo();
 
   // screen logic
   ScreenLogic();
-
-  console.log(movieInfo);
 });
 
 function ResizeEvent() {
@@ -21,7 +20,7 @@ function ResizeEvent() {
 
   if (back_div != null) {
     var style = window.getComputedStyle(back_div, null);
-    // back_div.style.height = style.width; in case width in %
+    back_div.style.height = style.width;
   }
 
   if (menu_button_div != null) {
@@ -33,6 +32,7 @@ function ResizeEvent() {
 function SensorLogic(swiper) {
   var slider = document.querySelector(".slider");
   var slide_block = document.querySelector(".senser-info");
+  var content_overflow = document.querySelector(".content");
 
   if (slider != null && slide_block != null) {
     slider.addEventListener("touchstart", (event) => {
@@ -64,4 +64,24 @@ function ScreenLogic() {
       content.classList.add("screen-menu-move-left");
     }
   });
+}
+
+function FillInfo() {
+  var url = document.URL;
+  var name = document.querySelector(".senser-info h1");
+  var sub_info = document.querySelector(".senser-info .info p");
+  var describe = document.querySelector(".senser-info .body p");
+
+  if (url.search("en")) {
+    if (name != null) name.textContent = movieInfo.SpiderManNoWayHome.title.eng;
+    if (sub_info != null)
+      sub_info.textContent =
+        movieInfo.SpiderManNoWayHome.year +
+        " • " +
+        movieInfo.SpiderManNoWayHome.genre.eng +
+        " • " +
+        movieInfo.SpiderManNoWayHome.timeline.eng;
+    if (describe != null)
+      describe.textContent = movieInfo.SpiderManNoWayHome.describe.eng;
+  }
 }

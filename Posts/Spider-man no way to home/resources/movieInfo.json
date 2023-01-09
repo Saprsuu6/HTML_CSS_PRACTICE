@@ -1,19 +1,55 @@
 {
     "SpiderManNoWayHome": {
-        "title": "Spider-man: No way home",
+        "title": {
+            "eng": "Spider-man: No way home",
+            "ru": "Человек паук: Нет пути домой"
+        },
         "year": 2021,
-        "genre": "Action/Adventure",
-        "timeline": "2 h 28 min",
-        "describe": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+        "genre": {
+            "eng": "Action/Adventure",
+            "ru": "Боевик/Приключения"
+        },
+        "timeline": {
+            "eng": "2 h 28 min",
+            "ru": "2 ч 28 мин"
+        },
+        "describe": {
+            "eng": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+            "ru": "Теперь, когда личность Человека-паука раскрыта, Питер просит помощи у Доктора Стрэнджа. Когда заклинание идет не так, начинают появляться опасные враги из других миров, заставляя Питера узнать, что на самом деле значит быть Человеком-пауком."
+        },
         "actors": [
-            {"actor": "Tom Holland", "alt": "Том Холланд", "picture": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQ4vi_du17tgWoFRa8kRnZHJYrwNkYgvX86XE_JyuKC0HlQZdn46Wd-BvewGoVrqmbV", "link": "https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D0%BB%D0%BB%D0%B0%D0%BD%D0%B4,_%D0%A2%D0%BE%D0%BC_(%D0%B0%D0%BA%D1%82%D1%91%D1%80)"},
-            {"actor": "Zendaya", "alt": "Зендая", "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTs0i1_qIXltdhVLuZDmFk4zMcZayT-OsiSAB9AkbmgoHlcGMwXyEX9VfD9Sn94w92z", "link": "https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BD%D0%B4%D0%B5%D1%8F"},
-            {"actor": "Jamie Foxx", "alt": "Джимми Фокс", "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSXsnMBM6BYHgt-ypp2v74BYwjizb1sg-2i6UaadGZGAIhCGT4BLwo5tE-gvrx1GM3T", "link": "https://ru.wikipedia.org/wiki/%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D0%B8_%D0%A4%D0%BE%D0%BA%D1%81"},
-            {"actor": "Marisa Tomei", "alt": "Мариса Томаи", "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcR8AOTicrSuFjMLyqyF-sIpirlyHSLOiBvKvc46BGhC0Ez4x-Zu6CyqAlSGSOk49RwV", "link": "https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BC%D0%B5%D0%B9,_%D0%9C%D0%B0%D1%80%D0%B8%D1%81%D0%B0"},
-            {"actor": "Benedict Cumberbatch", "alt": "Бенедикт Кумбербетчь", "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcT1HNwQ7mV6KJ1B3EHZbU6mxXemMCe6AMzlMYPeS-lu5ojF0k5hnMbPibYGEvuiZy4V", "link": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BC%D0%B1%D0%B5%D1%80%D0%B1%D1%8D%D1%82%D1%87,_%D0%91%D0%B5%D0%BD%D0%B5%D0%B4%D0%B8%D0%BA%D1%82"},
-            {"actor": "Alfred Molina", "alt": "Альфред Молина", "picture": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRBR9lJXoTx0gWqB3NazjThszphHgEP2GqJFa4M4SXERlTHykRm4axN_b8EYS607jJY", "link": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0,_%D0%90%D0%BB%D1%8C%D1%84%D1%80%D0%B5%D0%B4"},
-            {"actor": "Jacob Batalon", "alt": "Джаком Баталон", "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTjccrwgJVQDBm3UYcrIzQdqca4jlFpYAfy2XDY-9s0NzvBhLBF0ogFUkQK8YFHHkK1", "link": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%BD,_%D0%94%D0%B6%D0%B5%D0%B9%D0%BA%D0%BE%D0%B1"},
-            {"actor": "Jon Favreau", "alt": "Джон Фавро", "picture": "http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSwOEMlT_b61I2HQVwtfTPS2aUFTry4c5mcXBmup3riVSJBcZnndLJb_W3k1I4gDwiE", "link": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B2%D1%80%D0%BE,_%D0%94%D0%B6%D0%BE%D0%BD"}
+            { "actor": {
+                "eng": "Tom Holland",
+                "ru": "Том Холланд"
+            }, "picture": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQ4vi_du17tgWoFRa8kRnZHJYrwNkYgvX86XE_JyuKC0HlQZdn46Wd-BvewGoVrqmbV", "link": "https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D0%BB%D0%BB%D0%B0%D0%BD%D0%B4,_%D0%A2%D0%BE%D0%BC_(%D0%B0%D0%BA%D1%82%D1%91%D1%80)"},
+            { "actor": {
+                "eng": "Zendaya",
+                "ru": "Зендая"
+            }, "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTs0i1_qIXltdhVLuZDmFk4zMcZayT-OsiSAB9AkbmgoHlcGMwXyEX9VfD9Sn94w92z", "link": "https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BD%D0%B4%D0%B5%D1%8F"},
+            { "actor": {
+                "eng": "Jamie Foxx",
+                "ru": "Джимми Фокс"
+            }, "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSXsnMBM6BYHgt-ypp2v74BYwjizb1sg-2i6UaadGZGAIhCGT4BLwo5tE-gvrx1GM3T", "link": "https://ru.wikipedia.org/wiki/%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D0%B8_%D0%A4%D0%BE%D0%BA%D1%81"},
+            { "actor": {
+                "eng": "Marisa Tomei",
+                "ru": "Мариса Томаи"
+            }, "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcR8AOTicrSuFjMLyqyF-sIpirlyHSLOiBvKvc46BGhC0Ez4x-Zu6CyqAlSGSOk49RwV", "link": "https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BC%D0%B5%D0%B9,_%D0%9C%D0%B0%D1%80%D0%B8%D1%81%D0%B0"},
+            { "actor": {
+                "eng": "Benedict Cumberbatch",
+                "ru": "Бенедикт Кумбербетчь"
+            }, "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcT1HNwQ7mV6KJ1B3EHZbU6mxXemMCe6AMzlMYPeS-lu5ojF0k5hnMbPibYGEvuiZy4V", "link": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BC%D0%B1%D0%B5%D1%80%D0%B1%D1%8D%D1%82%D1%87,_%D0%91%D0%B5%D0%BD%D0%B5%D0%B4%D0%B8%D0%BA%D1%82"},
+            { "actor": {
+                "eng": "Alfred Molina",
+                "ru": "Альфред Молина"
+            }, "picture": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRBR9lJXoTx0gWqB3NazjThszphHgEP2GqJFa4M4SXERlTHykRm4axN_b8EYS607jJY", "link": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0,_%D0%90%D0%BB%D1%8C%D1%84%D1%80%D0%B5%D0%B4"},
+            { "actor": {
+                "eng": "Jacob Batalon",
+                "ru": "Джаком Баталон"
+            }, "picture": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTjccrwgJVQDBm3UYcrIzQdqca4jlFpYAfy2XDY-9s0NzvBhLBF0ogFUkQK8YFHHkK1", "link": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%BD,_%D0%94%D0%B6%D0%B5%D0%B9%D0%BA%D0%BE%D0%B1"},
+            {"actor": {
+                "eng": "Jon Favreau",
+                "ru": "Джон Фавро"
+            }, "picture": "http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSwOEMlT_b61I2HQVwtfTPS2aUFTry4c5mcXBmup3riVSJBcZnndLJb_W3k1I4gDwiE", "link": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B2%D1%80%D0%BE,_%D0%94%D0%B6%D0%BE%D0%BD"}
         ]
     }
 }

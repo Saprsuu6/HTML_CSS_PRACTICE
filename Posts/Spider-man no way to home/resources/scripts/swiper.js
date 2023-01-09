@@ -14,8 +14,6 @@ export default class Swiper {
       return;
     }
 
-    console.log(gradient);
-
     var x2 = firstTouch.clientX;
     var y2 = firstTouch.clientY;
 

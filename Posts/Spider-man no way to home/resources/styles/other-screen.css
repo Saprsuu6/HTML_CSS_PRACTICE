@@ -5,11 +5,19 @@
     }
 
     .senser-info {
-        background: linear-gradient(#D49B00,#CA7B00);   
+        background: linear-gradient(#d4b400ec,#ca7d00);   
     }
 
     .senser-info .for-content .bottom {
-        background: linear-gradient(to top, #CA7B00, transparent 50%);
+        background: linear-gradient(to top, #ca7d00, transparent 50%);
+    }
+
+    h1 {
+        color: rgb(65, 65, 65);
+    }
+    
+    p {
+        color: rgb(83, 83, 83);
     }
 }
 
@@ -20,11 +28,11 @@
     }
 
     .senser-info {
-        background: linear-gradient(#EBCAA7,#D1957B);   
+        background: linear-gradient(#ebd3a7e8,#b8795c);   
     }
 
     .senser-info .for-content .bottom {
-        background: linear-gradient(to top, #D1957B, transparent 50%);
+        background: linear-gradient(to top, #b8795c, transparent 50%);
     }
 }
 
@@ -69,5 +77,11 @@
         height: 100%;
 
         background: linear-gradient(to left, #536A8B, #8496B2);
+    }
+}
+
+@media screen and (max-width: 331px){
+    .senser-info .for-content .bottom {
+        display: none;
     }
 }
